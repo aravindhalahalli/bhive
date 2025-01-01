@@ -1,6 +1,5 @@
 # Bhive Application
 
-/**
  * Header
  *  - Logo
  *  - CTA for Call
@@ -12,4 +11,4 @@
  * Footer
  *  - Copyright
  *  - Contact
- */
+
