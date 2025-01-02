@@ -1,11 +1,11 @@
 import React from "react";
-import backgroundImage from "../../assets/bg.png";
-import videoSource from "../../assets/video.mp4";
-import backgroundSVG from "../../assets/videobgg.png";
+import backgroundImage from "../../assets/images/bg.png";
+import videoSource from "../../assets/images/video.mp4";
+import backgroundSVG from "../../assets/images/videobgg.png";
 
 const HeroSection: React.FC = () => {
     return (
-        <section className="flex flex-col-reverse md:flex-row min-h-screen items-center">
+        <section className="flex flex-col-reverse md:flex-row min-h-screen items-center md:min-h-0">
             <div className="w-full md:w-[61.8%]">
                 <img
                     src={backgroundImage}

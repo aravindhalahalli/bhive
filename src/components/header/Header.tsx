@@ -1,11 +1,11 @@
 import React from "react";
 import SvgIcon from "../../shared/svg-icon/SvgIcon";
-import Bhivelogo from '../../assets/logo.png';
+import Bhivelogo from '../../assets/images/logo.png';
 
 const Header: React.FC = () => {
     return (
-        <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-            <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4 sm:p-6">
+        <header className="top-0 left-0 w-full bg-white shadow-md z-50">
+            <div className="max-w-screen-xl mx-auto flex items-center justify-between p-5 sm:p-5">
                 <div className="flex items-center">
                     <img
                         src={Bhivelogo}

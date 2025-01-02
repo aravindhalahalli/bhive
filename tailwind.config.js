@@ -1,34 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-        // Logo Colors
-        primary: {
-          1: "#000000", // Primary 1
-          2: "#FFBB00", // Primary 2
+      screens: {
+        maxWidth: {
+          'screen-1200': '1200px',
         },
-        // Button Colors
+      },
+      colors: {
+        primary: {
+          1: "#000000",
+          2: "#FFBB00",
+        },
         button: {
           primary: {
-            main: "#FFCF4B", // Main Light Yellow
-            stroke: "#27AE60", // Stroke Dark Yellow
+            main: "#FFCF4B",
+            stroke: "#27AE60",
           },
           secondary: {
-            main: "#F9F9F9", // Main Light Grey
-            stroke: "#CEC6C6", // Stroke Dark Grey
+            main: "#F9F9F9",
+            stroke: "#CEC6C6",
           },
         },
-        // Text Colors
         text: {
-          main: "#263238", // Main Text Color
-          secondary: "#65624C", // Secondary Text Color
+          main: "#263238",
+          secondary: "#65624C",
         },
-        // Greys
+       
         gray: {
           1: "#333333",
           2: "#4F4F4F",
@@ -38,18 +37,17 @@ export default {
         },
       },
       fontSize: {
-        h1: ["58px", { lineHeight: "1.1" }], // Heading 1
-        h2: ["36px", { lineHeight: "1.1" }], // Heading 2
-        h3: ["24px", { lineHeight: "1.1" }], // Heading 3
-        h4: ["20px", { lineHeight: "1.1" }], // Heading 4
-        h5: ["18px", { lineHeight: "1.1" }], // Heading 5
-        h6: ["16px", { lineHeight: "1.1" }], // Heading 6
+        h1: ["58px", { lineHeight: "1.1" }],
+        h2: ["36px", { lineHeight: "1.1" }],
+        h3: ["24px", { lineHeight: "1.1" }],
+        h4: ["20px", { lineHeight: "28px" }],
+        h5: ["18px", { lineHeight: "1.1" }],
+        h6: ["16px", { lineHeight: "1.1" }],
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // Set Inter as the default font family
+        sans: ["Inter", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
-
+};
